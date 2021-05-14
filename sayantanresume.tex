@@ -1,0 +1,238 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ \usepackage{fontawesome}
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Sayantan}{Pal}{ \urlstyle{same}\href{https://www.linkedin.com/in/sayantan-pal-54a967205/}{Linkedin: sayantanpal}| 
+\href{mailto:pal.8@iitj.ac.in}{pal.8@iitj.ac.in} | 9318327900 | 
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{IIT Jodhpur}
+\descript{BTech. in  Mechanical ENGG.}
+\location{Dec 2023(Expected) | Jodhpur, IN}
+\location{ CGPA: 8.02 / 10.0(upto 4th sem) \\}
+\sectionsep
+
+\subsection{MVN,Aravali Hills}
+\location{Grad. May 2019|  Faridabad, India}
+\location{ Class XII:- 93.0\% \\}
+\location{Class X:-92.4\% \\}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+
+\subsection{Languages}
+\textbullet{} C \textbullet{}   C++ \textbullet{} Python 
+\textbullet{} Dart \\ \textbullet{} Javascript  \textbullet{}  Matlab \textbullet{}Latex \\
+\sectionsep
+\subsection{Development}
+
+\textbullet{} OpenCV \textbullet{} Tensorflow \textbullet{} Natural Language processing(NLP) \textbullet{} Keras \\
+\textbullet{} Nodejs \textbullet{} ReactJs  \textbullet{} CSS 
+\textbullet{} HTML5 \\ \textbullet{} Bootstrap \textbullet{} PassportJs\textbullet{} EJS  \\
+\textbullet{} MongoDb \textbullet{} SQl \textbullet{} Git \textbullet{} Github \\ \textbullet{} Firebase \textbullet{} Heroku  \\
+\sectionsep
+\subsection{Other Skills}
+
+\textbullet{} Solidworks \textbullet{}Auto CAD \\  \textbullet{} 
+Competitive programming \textbullet{} Essay writing \textbullet{} Instrumental Music(piano)\\
+\sectionsep
+
+
+
+
+
+\section{Coursework}
+
+\subsection{Under Graduate}
+\textbullet{}Introduction to  Machine Learning \\
+\textbullet{}Introduction to python programming\\
+\textbullet{}Data structures and algorithms \\
+\textbullet{}Signals and Systems\\
+\textbullet{}Scientific computations\\
+\textbullet{}Engineering realisation \\
+\textbullet{}Intro to electrical engineering \\
+\textbullet{}Manufacturing processes\\
+\sectionsep
+\subsection{Udemy}
+\textbullet{}Flutter & Dart - The Complete Guide \\
+\textbullet{}Deep Learning and Computer Vision A-Z™: OpenCV, SSD & GANs\\
+\textbullet{}The Complete 2021 Web Development Bootcamp\\
+\textbullet{}Data Science and Machine Learning Bootcamp\\
+\textbullet{}Machine Learning A-Z™: Hands-On Python & R In Data Science\\
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience}
+\runsubsection{Sunbeam Auto}
+\descript{| Vocational training }
+\location{Dec 2019 - Jan 2019 | Gurgaon, Haryana}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+
+\item Actively took part in day to day processes across multiple departments namely Alloying,PDC,GDC,Machining Department and tool room. 
+\item Deduced ways to reduce Rejection ratio and downtime of machines especially in the PDC department.
+\item Took part in assessing the performance of Robotic Arm(Yuzumi) to reduce Operational cost in the Machining department.
+\item Created the G-code to be fed to the VMC machines for various Tool designs running on the shop floor then.
+\end{tightemize}
+
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{\href{https://github.com/psayantan29/Course-Project-IML-CSL2010}{Empirical Analysis Of General Utility Problem In Machine Learning}}
+\descript{| Course Project}
+\location{December 2020 - January 2021 | \href{https://github.com/psayantan29/Course-Project-IML-CSL2010}{\bf GitHub \faExternalLink}}\location{}
+\item •Self-implementation of Multi-Layer Perceptron Neural Network,Decision tree induction method and Analysis of it to find the presence of general utility problem on different domains such as DNF2 and flag domain.
+\item •Worked out new ways to reduce overfitting, finding the optimal bias, variance and Bayes optimal classification error to extract max performance from the model.\newline
+• Tech-stack:\textbf{Python,Scikit-Learn}
+
+\sectionsep
+\runsubsection{ \href{https://fathomless-wave-33794.herokuapp.com}{Quick Learner \faExternalLink}}
+\descript{| Developer}
+\item •Built an dynamic online educational website with Nodejs for backend alongside EJS as templating engine and MongoDb as database.Encrypted Sensitive information with level 6 encryption. Used Nodemailer module to send email from server and hosted the website on Heroku.
+\item •Integrated Google Authentication with the use of passport.js as the  authentication middleware alongside using Razorpay Payment Gateway for accepting payments from customers for purchases.\newline
+  • Tech-stack: \textbf{NodeJS,MongoDB,CSS,Javascript}
+\sectionsep
+
+\runsubsection{PARKING ALLOCATION
+SYSTEM}
+\descript{| Engineering Design}
+\location{September 2019 - July 2020}
+\item •Led a team of 8 members to conceptualise and work on a Self sustained parking allocation system to be operated in large closed and open parking spaces.
+\item •Successfully developed working prototype and online allocation system to be implemented on large scale. Used TEG in the prototype to achieve self sustainability.
+
+• Tech-stack: \textbf{Solidworks,Arduino,SQL}
+
+\section{Links} 
+\textbullet LinkedIn:  \href{https://www.linkedin.com/in/sayantan-pal-54a967205/}{\bf Sayantan pal \faExternalLink} \hspace{1.5cm}
+\textbullet Codechef : \href{https://www.codechef.com/users/vectus_pirate}{\bf vectus pirate \faExternalLink} \\
+\textbullet Hackerrank:  \href{https://www.hackerrank.com/psayantan29}{\bf psayantan29 \faExternalLink} \hspace{1cm}
+\textbullet Github:  \href{https://github.com/psayantan29}{\bf psayantan29 \faExternalLink}
+
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Achievements} 
+\begin{tabular}{rll}
+2019	     & Among top 0.6 \% percentile of 1.3 million Applicants in JEE Advanced -2019 \\
+2019        & Achieved AIR-197 amongst 0.2 million applicants in WBJEE-2019\\ 
+2019	     & Amongst top 0.4 \% percentile of 0.2 million Applicants in BITSAT -2019 \\
+
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
